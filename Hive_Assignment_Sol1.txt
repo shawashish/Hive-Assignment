@@ -1,0 +1,25 @@
+create table sales_order_csv(
+    ORDERNUMBER int,
+    QUANTITYORDERED int,
+    PRICEEACH int,
+    ORDERLINENUMBER int,
+    SALES int,
+    STATUS string,
+    QTR_ID int,
+    MONTH_ID int,
+    YEAR_ID int,
+    PRODUCTLINE string,
+    MSRP int,
+    PRODUCTCODE string,
+    PHONE int,
+    CITY string,
+    STATE string,
+    POSTALCODE string,
+    COUNTRY string,
+    TERRITORY string,
+    CONTACTLASTNAME string,
+    CONTACTFIRSTNAME string,
+    DEALSIZE string)
+    row format delimited
+    fields terminated by ','
+    tblproperties ("skip.header.line.count"="1");
